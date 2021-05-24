@@ -23,7 +23,7 @@ First, complete the [basic Rust setup instructions](./docs/rust-setup.md).
 Use Rust's native `cargo` command to build and launch the template node:
 
 ```sh
-cargo run --release -- --dev --tmp
+cargo +nightly run --release -- --dev --tmp
 ```
 
 ### Build
@@ -32,7 +32,7 @@ The `cargo run` command will perform an initial build. Use the following command
 without launching it:
 
 ```sh
-cargo build --release
+cargo +nightly build --release
 ```
 
 ### Embedded Docs

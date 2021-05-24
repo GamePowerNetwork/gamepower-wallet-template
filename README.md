@@ -22,6 +22,54 @@ docker run -p 9944:9944 gamepower-wallet:0.0.1
 ---
 You can access your local running docker container here: [Polkadot.js Local Node](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944)
 
+### STEP 0
+>Before we begin, there are some types that need to be added to the polkadot.js app. You can enter these types under `Settings -> Developer`
+
+```
+{
+  "ListingId": "u64",
+  "ClaimId": "u128",
+  "Asset": {
+    "ClassIdOf": "ClassIdOf",
+    "TokenIdOf": "TokenIdOf"
+  },
+  "ListingOf": "Listing",
+  "Listing": {
+    "id": "ListingId",
+    "owner": "AccountId",
+    "asset": "Asset",
+    "price": "Balance"
+  },
+  "OrderOf": "Order",
+  "Order": {
+    "listing": "ListingOf",
+    "buyer": "AccountId",
+    "block": "BlockNumber"
+  },
+  "ClaimOf": "Claim",
+  "Claim": {
+    "receiver": "AccountId",
+    "asset": "Asset"
+  },
+  "WalletClassData": {
+    "metadata": "Vec<u8>"
+  },
+  "WalletAssetData": {
+    "metadata": "Vec<u8>"
+  },
+  "TokenInfo": {
+    "metadata": "Vec<u8>",
+    "owner": "AccountId",
+    "data": "WalletAssetData"
+  },
+  "ClassInfo": {
+    "metadata": "Vec<u8>",
+    "total_issuance": "TokenId",
+    "owner": "AccountId",
+    "data": "WalletClassData"
+  }
+}
+```
 ### STEP 1
 Once here, visit `Developer -> Extrinsics` tab. Here you can select `Bob` as your selected account
 

@@ -1,4 +1,7 @@
 # GamePower Wallet Template
+<p align="center">
+  <img alt="step3" src="./images/cover.png">
+</p>
 
 ## Project Overview :page_facing_up:
 

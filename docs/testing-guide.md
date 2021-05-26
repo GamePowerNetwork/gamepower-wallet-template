@@ -80,14 +80,16 @@ You must have at least 1 asset class and token available to perform this test. E
 ### STEP 2
 Select the `mint` method and add any meta data or properties that you like, set the quantity. Then submit the transaction.
 
-Enter the id of the class we create 0 and token id we just created which is 0..(quantity minted). Finally set a price for this asset on the market and submit the transaction.
+Enter the id of the class we create 0 and token id we just created which is 0..(quantity minted). Now submit the transaction.
 <p align="center">
   <img alt="step2" src="../images/step2.png">
 </p>
 
 
 ### STEP 3
-Now let's actually do something cool. Select the `gamePowerWallet` module and the `list` method as shown below. We will use this to sell the NFT on the market.
+Now let's actually do something cool. Select the `gamePowerWallet` module and the `list` method as shown below. We will use this to sell the NFT on the market. Enter the ids of the class and token we want to list.
+
+Finally set a price for this asset on the market and submit the transaction.
 <p align="center">
   <img alt="step3" src="../images/step3.png">
 </p>

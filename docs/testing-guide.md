@@ -25,7 +25,7 @@ You can access your local running docker container here: [Polkadot.js Local Node
 ```
 {
   "ListingId": "u64",
-  "ClaimId": "u128",
+  "ClaimId": "u64",
   "Asset": {
     "ClassIdOf": "ClassIdOf",
     "TokenIdOf": "TokenIdOf"

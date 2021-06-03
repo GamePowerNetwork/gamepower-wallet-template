@@ -1,6 +1,6 @@
 {
   "ListingId": "u64",
-  "ClaimId": "u128",
+  "ClaimId": "u64",
   "Asset": {
     "ClassIdOf": "ClassIdOf",
     "TokenIdOf": "TokenIdOf"
